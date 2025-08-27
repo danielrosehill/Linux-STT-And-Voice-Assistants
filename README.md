@@ -1,5 +1,7 @@
 # Linux Speech-to-Text and Voice Assistants
 
+## Point in time snapshot, August 27th, 2028
+
 ![Last Updated](https://img.shields.io/badge/Last%20Updated-August%2027%2C%202025-blue?style=flat-square)
 ![Repository Type](https://img.shields.io/badge/Type-Index-green?style=flat-square)
 ![Resources](https://img.shields.io/badge/Resources-100%2B-orange?style=flat-square)
@@ -118,11 +120,14 @@ Tools that leverage Whisper etc for STT but also add a layer for text cleanup af
 | [![super-stt](https://img.shields.io/github/stars/jorge-menjivar/super-stt?style=flat-square)](https://github.com/jorge-menjivar/super-stt) | ![Stars](https://img.shields.io/github/stars/jorge-menjivar/super-stt?style=flat-square) | ![Last Commit](https://img.shields.io/github/last-commit/jorge-menjivar/super-stt?style=flat-square) | Enhanced STT tool |
 | [![wvcr](https://img.shields.io/github/stars/bakeryproducts/wvcr?style=flat-square)](https://github.com/bakeryproducts/wvcr) | ![Stars](https://img.shields.io/github/stars/bakeryproducts/wvcr?style=flat-square) | ![Last Commit](https://img.shields.io/github/last-commit/bakeryproducts/wvcr?style=flat-square) | Wave voice control recorder |
 
-### Vendor Drivers
+## Vendor Projects
+
+### Deepgram
 
 | Repository | Stars | Last Updated | Description |
 |------------|-------|--------------|-------------|
-| [![voice-keyboard-linux](https://img.shields.io/github/stars/deepgram/voice-keyboard-linux?style=flat-square)](https://github.com/deepgram/voice-keyboard-linux) | ![Stars](https://img.shields.io/github/stars/deepgram/voice-keyboard-linux?style=flat-square) | ![Last Commit](https://img.shields.io/github/last-commit/deepgram/voice-keyboard-linux?style=flat-square) | Deepgram voice keyboard |
+| [**fortuna**](https://github.com/deepgram-devs/fortuna) | ![Stars](https://img.shields.io/github/stars/deepgram-devs/fortuna?style=flat-square) | ![Last Commit](https://img.shields.io/github/last-commit/deepgram-devs/fortuna?style=flat-square) | Deepgram Fortuna project |
+| [**voice-keyboard-linux**](https://github.com/deepgram/voice-keyboard-linux) | ![Stars](https://img.shields.io/github/stars/deepgram/voice-keyboard-linux?style=flat-square) | ![Last Commit](https://img.shields.io/github/last-commit/deepgram/voice-keyboard-linux?style=flat-square) | Deepgram voice keyboard |
 
 ### Small Repositories
 
