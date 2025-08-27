@@ -38,7 +38,9 @@ Speech to text (STT) can be integrated into applications or at the OS level. For
 
 OpenAI's decision to open-source Whisper has created a welcome flourishing of STT projects using Whisper - creating a sprawling long tail of tools in a corner of the voice technology world that was once lacking a diversity of tools.
 
-These implementations usually assume or install a local copy of Whisper. But there are some which enable the user to choose whether to use a local or commercial/cloud-hosted STT. 
+These implementations usually assume or install a local copy of Whisper. But there are some which enable the user to choose whether to use a local or commercial/cloud-hosted STT. Finally, there are apps which only use cloud inference - and among those tools which support only one STT provider and those which allow the user to choose between options.
+
+The first category of solutions in the STT landscape is "pure play" STT solutions. These may be CLIs, desktop GUIs, or web UIs. They may be synchronous tools which try to do STT on the fly (challenging!) or asynchronous (like: upload and transcribe apps). Or they may offer both. 
 
 Many of the emerging and AI-centric voice technologies combine first pass STT with second pass LLM text optimisation. Whether this two-pass process happens entirely locally, entirely through cloud API calls, or either, these can be grouped together by the commonality that they all send a raw STT transcript through an LLM for rewording into a desired specific textual format (like an email) or simply to remove typos. I call these "STT and rewrite".
 
