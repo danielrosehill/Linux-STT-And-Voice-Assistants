@@ -1,5 +1,7 @@
 # Linux Speech-to-Text and Voice Assistants
 
+![alt text](banner.png)
+
 ## A point in time (or maybe ongoing) snapshot of the evolving STT ecosystem for Linux (and more)
 
 ![Last Updated](https://img.shields.io/badge/Last%20Updated-August%2027%2C%202025-blue?style=flat-square)
@@ -55,6 +57,7 @@ The most popular repositories in this collection, sorted by star count:
 | Repository | Stars | Description | Language |
 |------------|-------|-------------|----------|
 | [**nerd-dictation**](https://github.com/ideasman42/nerd-dictation) | ![Stars](https://img.shields.io/github/stars/ideasman42/nerd-dictation?style=flat-square) | Simple, hackable offline speech to text - using the VOSK-API. | Python |
+| [**Scriberr**](https://github.com/rishikanthc/Scriberr) | ![Stars](https://img.shields.io/github/stars/rishikanthc/Scriberr?style=flat-square) | Voice transcription tool | Python |
 | [**dsnote**](https://github.com/mkiol/dsnote) | ![Stars](https://img.shields.io/github/stars/mkiol/dsnote?style=flat-square) | Speech Note Linux app. Note taking, reading and translating with offline Speech to Text, Text to Speech and Machine translation. | C++ |
 
 ---
@@ -166,7 +169,6 @@ Met inclusion criteria but haven't been tested yet. This represents a long tail 
 | [**deepin-voice-note**](https://github.com/linuxdeepin/deepin-voice-note) | ![Stars](https://img.shields.io/github/stars/linuxdeepin/deepin-voice-note?style=flat-square) | ![Last Commit](https://img.shields.io/github/last-commit/linuxdeepin/deepin-voice-note?style=flat-square) | Deepin voice note application |
 | [**say**](https://github.com/addyosmani/say) | ![Stars](https://img.shields.io/github/stars/addyosmani/say?style=flat-square) | ![Last Commit](https://img.shields.io/github/last-commit/addyosmani/say?style=flat-square) | Voice synthesis tool |
 | [**ScribeWizard**](https://github.com/Bklieger/ScribeWizard) | ![Stars](https://img.shields.io/github/stars/Bklieger/ScribeWizard?style=flat-square) | ![Last Commit](https://img.shields.io/github/last-commit/Bklieger/ScribeWizard?style=flat-square) | Transcription wizard tool |
-| [**Scriberr**](https://github.com/rishikanthc/Scriberr) | ![Stars](https://img.shields.io/github/stars/rishikanthc/Scriberr?style=flat-square) | ![Last Commit](https://img.shields.io/github/last-commit/rishikanthc/Scriberr?style=flat-square) | Voice transcription tool |
 | [**WhisperVoiceInput**](https://github.com/V0v1kkk/WhisperVoiceInput) | ![Stars](https://img.shields.io/github/stars/V0v1kkk/WhisperVoiceInput?style=flat-square) | ![Last Commit](https://img.shields.io/github/last-commit/V0v1kkk/WhisperVoiceInput?style=flat-square) | Whisper voice input tool |
 | [**whisper-notes-pro**](https://github.com/mzazakeith/whisper-notes-pro) | ![Stars](https://img.shields.io/github/stars/mzazakeith/whisper-notes-pro?style=flat-square) | ![Last Commit](https://img.shields.io/github/last-commit/mzazakeith/whisper-notes-pro?style=flat-square) | Professional whisper notes application |
 | [**WhisperVoice**](https://github.com/SarwadnyaMahajan/WhisperVoice) | ![Stars](https://img.shields.io/github/stars/SarwadnyaMahajan/WhisperVoice?style=flat-square) | ![Last Commit](https://img.shields.io/github/last-commit/SarwadnyaMahajan/WhisperVoice?style=flat-square) | Whisper voice processing tool |
