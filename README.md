@@ -1,6 +1,6 @@
 # Linux Speech-to-Text and Voice Assistants
 
-## Point in time snapshot, August 27th, 2028
+## A point in time (or maybe ongoing) snapshot of the evolving STT ecosystem for Linux (and more)
 
 ![Last Updated](https://img.shields.io/badge/Last%20Updated-August%2027%2C%202025-blue?style=flat-square)
 ![Repository Type](https://img.shields.io/badge/Type-Index-green?style=flat-square)
@@ -29,6 +29,18 @@ If I can manage to find time to maintain  rather than simply collate this, I wil
 | ✅ In Scope | Voice-to-X | Voice-to-MCP, voice-to-commands, and similar tools |
 | ❌ Out of Scope | TTS | Text-to-speech synthesis tools |
 | ❌ Out of Scope | TTS Applications | Voice cloning and other TTS applications |
+
+## Project Classification
+
+All these are my subjective thoughts:
+
+Speech to text (STT) can be integrated into applications or at the OS level. For most applications, OS-level functionality is far more powerful, useful, and sustainable. You can use and pay for one good STT app that will work across software - whether it's available via web browser or a local application. 
+
+OpenAI's decision to open-source Whisper has created a welcome flourishing of STT projects using Whisper - creating a sprawling long tail of tools in a corner of the voice technology world that was once lacking a diversity of tools.
+
+These implementations usually assume or install a local copy of Whisper. But there are some which enable the user to choose whether to use a local or commercial/cloud-hosted STT. 
+
+Many voice technologies combine first pass STT with second pass LLM text optimisation. These are included, also. Finally, STT tools can be divided further into those which "simply" do STT and those which do STT and then add a secondary layer. For example: tools which combine STT with MCP calling or combined STT and computer use agents. In these tools,the STT feature may be secondary in importance to the main use. For want of a better label, I may sometimes call these "STT + do stuff." But both sets of tools are highly valuable. 
 
 ## Largest Projects (1000+ Stars)
 
