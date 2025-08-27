@@ -40,7 +40,11 @@ OpenAI's decision to open-source Whisper has created a welcome flourishing of ST
 
 These implementations usually assume or install a local copy of Whisper. But there are some which enable the user to choose whether to use a local or commercial/cloud-hosted STT. 
 
-Many voice technologies combine first pass STT with second pass LLM text optimisation. These are included, also. Finally, STT tools can be divided further into those which "simply" do STT and those which do STT and then add a secondary layer. For example: tools which combine STT with MCP calling or combined STT and computer use agents. In these tools,the STT feature may be secondary in importance to the main use. For want of a better label, I may sometimes call these "STT + do stuff." But both sets of tools are highly valuable. 
+Many of the emerging and AI-centric voice technologies combine first pass STT with second pass LLM text optimisation. Whether this two-pass process happens entirely locally, entirely through cloud API calls, or either, these can be grouped together by the commonality that they all send a raw STT transcript through an LLM for rewording into a desired specific textual format (like an email) or simply to remove typos. I call these "STT and rewrite".
+
+Finally, we have STT tools which firstly do STT and then translate the resulting natural language into some other format. These include STT-to-code, STT to MCP, STT to computer use agents (etc). I call these "STT and do stuff."
+
+---
 
 ## Largest Projects (1000+ Stars)
 
