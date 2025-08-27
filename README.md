@@ -56,6 +56,7 @@ The most popular repositories in this collection, sorted by star count:
 
 | Repository | Stars | Description | Language |
 |------------|-------|-------------|----------|
+| [**Whisper-WebUI**](https://github.com/jhj0517/Whisper-WebUI) | ![Stars](https://img.shields.io/github/stars/jhj0517/Whisper-WebUI?style=flat-square) | A Gradio-based browser interface for Whisper. You can use it as an Easy Subtitle Generator! | Python |
 | [**nerd-dictation**](https://github.com/ideasman42/nerd-dictation) | ![Stars](https://img.shields.io/github/stars/ideasman42/nerd-dictation?style=flat-square) | Simple, hackable offline speech to text - using the VOSK-API. | Python |
 | [**Scriberr**](https://github.com/rishikanthc/Scriberr) | ![Stars](https://img.shields.io/github/stars/rishikanthc/Scriberr?style=flat-square) | Voice transcription tool | Python |
 | [**dsnote**](https://github.com/mkiol/dsnote) | ![Stars](https://img.shields.io/github/stars/mkiol/dsnote?style=flat-square) | Speech Note Linux app. Note taking, reading and translating with offline Speech to Text, Text to Speech and Machine translation. | C++ |
@@ -84,6 +85,7 @@ Check out [Getting Started Guide](starting-points.md) for step-by-step setup ins
   - [STT with Post-processing](#stt-with-post-processing)
   - [Proof of Concepts](#proof-of-concepts)
   - [General STT Tools](#general-stt-tools)
+- [Self Hosted](#self-hosted)
 - [Vendor Projects](#vendor-projects)
   - [Deepgram](#deepgram)
   - [Small Repositories](#small-repositories)
@@ -216,6 +218,17 @@ Tools that leverage Whisper etc for STT but also add a layer for text cleanup af
 |------------|-------|--------------|-------------|
 | [**STT-Assistant-linux**](https://github.com/4lext/STT-Assistant-linux) | ![Stars](https://img.shields.io/github/stars/4lext/STT-Assistant-linux?style=flat-square) | ![Last Commit](https://img.shields.io/github/last-commit/4lext/STT-Assistant-linux?style=flat-square) | STT assistant for Linux |
 | [**voicekeyboard**](https://github.com/sam1am/voicekeyboard) | ![Stars](https://img.shields.io/github/stars/sam1am/voicekeyboard?style=flat-square) | ![Last Commit](https://img.shields.io/github/last-commit/sam1am/voicekeyboard?style=flat-square) | Voice keyboard implementation |
+
+---
+
+## Self Hosted
+
+Docker-deployed tools and web interfaces that can be deployed locally or on a server for self-hosted STT solutions.
+
+| Repository | Stars | Last Updated | Description |
+|------------|-------|--------------|-------------|
+| [**Whisper-WebUI**](https://github.com/jhj0517/Whisper-WebUI) | ![Stars](https://img.shields.io/github/stars/jhj0517/Whisper-WebUI?style=flat-square) | ![Last Commit](https://img.shields.io/github/last-commit/jhj0517/Whisper-WebUI?style=flat-square) | A Gradio-based browser interface for Whisper. You can use it as an Easy Subtitle Generator! |
+| [**Scriberr**](https://github.com/rishikanthc/Scriberr) | ![Stars](https://img.shields.io/github/stars/rishikanthc/Scriberr?style=flat-square) | ![Last Commit](https://img.shields.io/github/last-commit/rishikanthc/Scriberr?style=flat-square) | Voice transcription tool |
 
 ---
 

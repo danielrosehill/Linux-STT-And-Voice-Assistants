@@ -7,13 +7,14 @@ All repositories from the Linux STT and Voice Assistants index, sorted by GitHub
 | Repository | Stars (Aug 27, 2025) | Description | Language |
 |------------|----------------------|-------------|----------|
 | [**meeting-minutes**](https://github.com/Zackriya-Solutions/meeting-minutes) | 7,232 | A free and open source, self hosted Ai based live meeting note taker and minutes summary generator that can completely run in your Local device (Mac OS and windows OS Support added. Working on adding linux support soon) https://meetily.zackriya.com/ is meetly ai | C++ |
+| [**Whisper-WebUI**](https://github.com/jhj0517/Whisper-WebUI) | 2,299 | A Web UI for easy subtitle using whisper model. | Python |
 | [**notesGPT**](https://github.com/Nutlope/notesGPT) | 1,994 | Record voice notes & transcribe, summarize, and get tasks | TypeScript |
 | [**nerd-dictation**](https://github.com/ideasman42/nerd-dictation) | 1,553 | Simple, hackable offline speech to text - using the VOSK-API. | Python |
 | [**auto-subs**](https://github.com/tmoroney/auto-subs) | 1,442 | Instantly generate AI-powered subtitles on your device. Works standalone or connects to DaVinci Resolve. | TypeScript |
 | [**voice2json**](https://github.com/synesthesiam/voice2json) | 1,109 | Command-line tools for speech and intent recognition on Linux | Python |
 | [**Scriberr**](https://github.com/rishikanthc/Scriberr) | 1,099 | Self-hosted AI audio transcription | Svelte |
 | [**dsnote**](https://github.com/mkiol/dsnote) | 1,077 | Speech Note Linux app. Note taking, reading and translating with offline Speech to Text, Text to Speech and Machine translation. | C++ |
-| [**aTrain**](https://github.com/JuergenFleiss/aTrain) | 862 | A GUI tool for offline transcription of speech recordings, including speaker diarization, utilizing state-of-the-art machine learning models. | HTML |
+| [**aTrain**](https://github.com/JuergenFleiss/aTrain) | 863 | A GUI tool for offline transcription of speech recordings, including speaker diarization, utilizing state-of-the-art machine learning models. | HTML |
 | [**ScribeWizard**](https://github.com/Bklieger/ScribeWizard) | 494 | ScribeWizard: Generate organized notes from audio using Groq, Whisper, and Llama3 | Python |
 | [**whisper**](https://github.com/Nutlope/whisper) | 427 | Take notes with your voice & transform them with AI | TypeScript |
 | [**say**](https://github.com/addyosmani/say) | 329 | Say - A Whisper AI Notes app | TypeScript |
