@@ -146,6 +146,7 @@ This index is (highly!) non-exhaustive.
 | [**WhisperHelper**](https://github.com/nacmonad/WhisperHelper) | ![Stars](https://img.shields.io/github/stars/nacmonad/WhisperHelper?style=flat-square) | ![Last Commit](https://img.shields.io/github/last-commit/nacmonad/WhisperHelper?style=flat-square) | A simple GUI for OpenAI Whisper |
 | [**voice2chatgpt**](https://github.com/RemiFabre/voice2chatgpt) | ![Stars](https://img.shields.io/github/stars/RemiFabre/voice2chatgpt?style=flat-square) | ![Last Commit](https://img.shields.io/github/last-commit/RemiFabre/voice2chatgpt?style=flat-square) | Voice to ChatGPT |
 | [**nerd-dictation**](https://github.com/ideasman42/nerd-dictation) | ![Stars](https://img.shields.io/github/stars/ideasman42/nerd-dictation?style=flat-square) | ![Last Commit](https://img.shields.io/github/last-commit/ideasman42/nerd-dictation?style=flat-square) | Simple, hackable offline speech to text - using the VOSK-API. |
+| [**speech2caret**](https://github.com/asmith26/speech2caret) | ![Stars](https://img.shields.io/github/stars/asmith26/speech2caret?style=flat-square) | ![Last Commit](https://img.shields.io/github/last-commit/asmith26/speech2caret?style=flat-square) | Use your speech to write to the current caret position! |
 
 ### Unsorted / Unreviewed
 
