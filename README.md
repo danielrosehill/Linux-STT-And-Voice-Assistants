@@ -1,10 +1,8 @@
-# Linux Speech-to-Text and Voice Assistants
+# Linux Voice And Dictation Resources
 
 ![alt text](banner.png)
 
-
-
-## A snapshot of the evolving STT ecosystem for Linux 
+## A snapshot of the evolving STT ecosystem for Linux  
 
 ![Last Updated](https://img.shields.io/badge/Last%20Updated-November%2017%2C%202025-blue?style=flat-square)
 ![Repository Type](https://img.shields.io/badge/Type-Index-green?style=flat-square)
@@ -100,7 +98,7 @@ Check out [Getting Started Guide](starting-points.md) for step-by-step setup ins
 - [Search Terms](#search-terms)
 
 ### 🎤 STT Tools & Related
-- [Linux Speech-to-Text and Voice Assistants](#linux-speech-to-text-and-voice-assistants)
+- [Linux Voice And Dictation Resources](#linux-voice-and-dictation-resources)
   - [A snapshot of the evolving STT ecosystem for Linux](#a-snapshot-of-the-evolving-stt-ecosystem-for-linux)
   - [Keywords](#keywords)
   - [The Boom In Linux STT/ASR (Whisper - Present)](#the-boom-in-linux-sttasr-whisper---present)
