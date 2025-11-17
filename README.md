@@ -2,7 +2,7 @@
 
 ![alt text](banner.png)
 
-## A point in time (or maybe ongoing) snapshot of the evolving STT ecosystem for Linux (and more)
+## A snapshot of the evolving STT ecosystem for Linux (and more)
 
 ![Last Updated](https://img.shields.io/badge/Last%20Updated-November%2017%2C%202025-blue?style=flat-square)
 ![Repository Type](https://img.shields.io/badge/Type-Index-green?style=flat-square)
@@ -11,11 +11,9 @@
 
 Speech technology is booming!
 
-This repository is a point-in-time index of speech to text projects with support for the Linux desktop environment (among others).
+This repository is an index of speech to text projects with support for the Linux desktop environment (among others).
 
-I hope that it will provide a useful collection of available projets (some fairly established, others at early stages of prototyping) useful for fellow STT enthusiasts and believers - whether you use Linux or not (many of the projects are cross-platform).
-
-If I can manage to find time to maintain  rather than simply collate this, I will remove the point-in-time label.
+I hope that it will provide a useful collection of available projects (some fairly established, others at early stages of prototyping) useful for fellow STT enthusiasts and believers - whether you use Linux or not (many of the projects are cross-platform).
 
 ## Quick Navigation
 
@@ -36,11 +34,27 @@ If I can manage to find time to maintain  rather than simply collate this, I wil
 
 All these are my subjective thoughts:
 
-Speech to text (STT) can be integrated into applications or at the OS level. For most applications, OS-level functionality is far more powerful, useful, and sustainable. You can use and pay for one good STT app that will work across software - whether it's available via web browser or a local application. 
+Speech to text (STT) can be integrated into applications or at the OS level. For most applications, OS-level functionality is far more powerful, useful, and sustainable. You can use and pay for one good STT app that will work across software - whether it's available via web browser or a local application.
 
 OpenAI's decision to open-source Whisper has created a welcome flourishing of STT projects using Whisper - creating a sprawling long tail of tools in a corner of the voice technology world that was once lacking a diversity of tools.
 
-These implementations usually assume or install a local copy of Whisper. But there are some which enable the user to choose whether to use a local or commercial/cloud-hosted STT. Finally, there are apps which only use cloud inference - and among those tools which support only one STT provider and those which allow the user to choose between options.
+### STT Deployment Patterns
+
+Projects typically support either **local STT** or **cloud STT**, and less commonly both:
+
+- **Local-only STT**: These implementations usually assume or install a local copy of Whisper or other models, offering complete privacy and offline functionality
+- **Cloud-only STT**: Apps that rely exclusively on cloud inference, either supporting a single provider or offering multiple provider choices
+- **Hybrid approaches**: Some projects enable users to choose between local or commercial/cloud-hosted STT
+
+Among cloud STT integrations, **Whisper** (via OpenAI or other providers) remains the most common integration. However, a small but growing selection of projects are emerging that use **Deepgram** for cloud-based STT.
+
+### Categorizing Whisper Implementations
+
+Given the very long list of Whisper implementations, an attempt is made here to categorize them into groups. The most significant divisions are:
+
+- **Wayland support**: Projects explicitly supporting Wayland virtual input (important for modern Linux desktop users)
+- **Hardware focus**: CPU-centric vs. GPU-optimized implementations
+- **Transcription mode**: Real-time (streaming) vs. asynchronous (batch/upload) focused
 
 The first category of solutions in the STT landscape is "pure play" STT solutions. These may be CLIs, desktop GUIs, or web UIs. They may be synchronous tools which try to do STT on the fly (challenging!) or asynchronous (like: upload and transcribe apps). Or they may offer both. 
 
