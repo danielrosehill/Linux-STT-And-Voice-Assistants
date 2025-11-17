@@ -2,12 +2,25 @@
 
 ![alt text](banner.png)
 
+
+
 ## A snapshot of the evolving STT ecosystem for Linux 
 
 ![Last Updated](https://img.shields.io/badge/Last%20Updated-November%2017%2C%202025-blue?style=flat-square)
 ![Repository Type](https://img.shields.io/badge/Type-Index-green?style=flat-square)
 ![Resources](https://img.shields.io/badge/Resources-100%2B-orange?style=flat-square)
 ![License](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)
+
+## Keywords
+
+- Speech to text (STT) 
+- Automatic speech recognition (ASR) 
+- Linux note transcription 
+- Linux voice control 
+- Linux transcription 
+- Linux dictation 
+
+## The Boom In Linux STT/ASR (Whisper - Present) 
 
 For a long time, voice support on Linux was very partial: the platform was mostly ignored by major dictation providers, owing to small desktop share, and voice assistant tools were hampered, in large part, by that fact - transcription being required for "assistants" which convert understood commands into shell commands/actions.
 
@@ -21,6 +34,8 @@ I created this repo because - having been using voice for most typing for about 
 [![Voice Assistants](https://img.shields.io/badge/🤖_Voice_Assistants-Linux_Compatible-green?style=for-the-badge)](#voice-assistants)
 
 ## Inclusion Criteria
+
+While text to spech functionalities are often integrated into voice applications, the focus here is on speech to text/transcription. TTS is another - and also vibrant! - tech ecosystem!
 
 | Scope | Category | Description |
 |-------|----------|-------------|
@@ -87,6 +102,8 @@ Check out [Getting Started Guide](starting-points.md) for step-by-step setup ins
 ### 🎤 STT Tools & Related
 - [Linux Speech-to-Text and Voice Assistants](#linux-speech-to-text-and-voice-assistants)
   - [A snapshot of the evolving STT ecosystem for Linux](#a-snapshot-of-the-evolving-stt-ecosystem-for-linux)
+  - [Keywords](#keywords)
+  - [The Boom In Linux STT/ASR (Whisper - Present)](#the-boom-in-linux-sttasr-whisper---present)
   - [Quick Navigation](#quick-navigation)
   - [Inclusion Criteria](#inclusion-criteria)
     - [STT Deployment Patterns](#stt-deployment-patterns)
@@ -120,7 +137,17 @@ Check out [Getting Started Guide](starting-points.md) for step-by-step setup ins
 - [Voice Assistants](#voice-assistants)
   - [General](#general)
   - [More Specific](#more-specific)
-  - [Notes On Wayland](#notes-on-wayland)
+  - [Voice Operating Systems](#voice-operating-systems)
+  - [Service-Specific Voice Tools](#service-specific-voice-tools)
+  - [Voice Biometrics](#voice-biometrics)
+  - [Complementary Tools](#complementary-tools)
+    - [Voice Activity Detection (VAD) \& Diarisation](#voice-activity-detection-vad--diarisation)
+  - [Toolkits \& Frameworks](#toolkits--frameworks)
+  - [Community Resources](#community-resources)
+    - [Subreddits](#subreddits)
+  - [Important Notes](#important-notes)
+    - [GPU Acceleration](#gpu-acceleration)
+    - [Wayland Compatibility](#wayland-compatibility)
 
 ### 🤖 Voice Assistants
 - [Voice Assistants](#voice-assistants)
@@ -418,6 +445,33 @@ These technologies complement voice systems by detecting when speech is happenin
 
 - **VAD (Voice Activity Detection)**: Algorithms that detect when speech is present in an audio stream, crucial for reducing processing overhead in real-time STT systems
 - **Diarisation**: The process of partitioning an audio stream into segments according to speaker identity. [Pyannote](https://github.com/pyannote/pyannote-audio) is a popular open-source toolkit for speaker diarisation
+
+---
+
+## Toolkits & Frameworks
+
+ASR/STT toolkits and frameworks for building voice applications:
+
+| Repository | Stars | Last Updated | Description |
+|------------|-------|--------------|-------------|
+| [**FunASR**](https://github.com/modelscope/FunASR) | ![Stars](https://img.shields.io/github/stars/modelscope/FunASR?style=flat-square) | ![Last Commit](https://img.shields.io/github/last-commit/modelscope/FunASR?style=flat-square) | A Fundamental End-to-End Speech Recognition Toolkit from Alibaba |
+
+---
+
+## Community Resources
+
+### Subreddits
+
+Relevant Reddit communities for STT, voice technology, and related topics:
+
+| Subreddit | Focus |
+|-----------|-------|
+| [r/VoiceTech](https://www.reddit.com/r/VoiceTech/) | Voice technology and applications |
+| [r/speechrecognition](https://www.reddit.com/r/speechrecognition/) | Speech recognition systems and discussion |
+| [r/TextToSpeech](https://www.reddit.com/r/TextToSpeech/) | TTS technology (complementary to STT) |
+| [r/LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/) | Local LLMs (frequently covers voice topics) |
+| [r/accessibility](https://www.reddit.com/r/accessibility/) | Accessibility tools including voice control |
+| [r/opensource](https://www.reddit.com/r/opensource/) | Open source projects including voice tools |
 
 ---
 
