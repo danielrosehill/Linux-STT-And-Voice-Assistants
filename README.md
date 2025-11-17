@@ -54,7 +54,7 @@ Projects typically support either **local STT** or **cloud STT**, and less commo
 
 Among cloud STT integrations, **Whisper** (via OpenAI or other providers) remains the most common integration. However, a small but growing selection of projects are emerging that use **Deepgram** for cloud-based STT.
 
-### Categorizing Whisper Implementations
+## Categorizing Whisper Implementations
 
 Given the very long list of Whisper implementations, an attempt is made here to categorize them into groups. The most significant divisions are:
 
@@ -89,78 +89,10 @@ The most popular repositories in this collection, sorted by star count:
 
 Check out [Getting Started Guide](starting-points.md) for step-by-step setup instructions, hardware recommendations, and model selection guidance.
 
-## Table of Contents
+## AI / Human Division Of Labor 
 
-### General Sections
-- [Inclusion Criteria](#inclusion-criteria)
-- [Largest Projects (1000+ Stars)](#largest-projects-1000-stars)
-- [Getting Started](#getting-started)
-- [Search Terms](#search-terms)
-
-### 🎤 STT Tools & Related
-- [Linux Voice And Dictation Resources](#linux-voice-and-dictation-resources)
-  - [A snapshot of the evolving STT ecosystem for Linux](#a-snapshot-of-the-evolving-stt-ecosystem-for-linux)
-  - [Keywords](#keywords)
-  - [The Boom In Linux STT/ASR (Whisper - Present)](#the-boom-in-linux-sttasr-whisper---present)
-  - [Quick Navigation](#quick-navigation)
-  - [Inclusion Criteria](#inclusion-criteria)
-    - [STT Deployment Patterns](#stt-deployment-patterns)
-    - [Categorizing Whisper Implementations](#categorizing-whisper-implementations)
-  - [Largest Projects (1000+ Stars)](#largest-projects-1000-stars)
-  - [Getting Started](#getting-started)
-  - [Table of Contents](#table-of-contents)
-    - [General Sections](#general-sections)
-    - [🎤 STT Tools \& Related](#-stt-tools--related)
-    - [🤖 Voice Assistants](#-voice-assistants)
-  - [Inclusion Criteria](#inclusion-criteria-1)
-  - [Search Terms](#search-terms)
-  - [Speech-to-Text - Real Time](#speech-to-text---real-time)
-    - [GUIs](#guis)
-    - [CLIs](#clis)
-    - [Unsorted / Unreviewed](#unsorted--unreviewed)
-    - [STT with Post-processing](#stt-with-post-processing)
-    - [Proof of Concepts](#proof-of-concepts)
-    - [General STT Tools](#general-stt-tools)
-  - [Vendor Projects](#vendor-projects)
-    - [Deepgram](#deepgram)
-    - [Small Repositories](#small-repositories)
-  - [Self Hosted](#self-hosted)
-  - [Speech-to-Text - Asynchronous](#speech-to-text---asynchronous)
-  - [Developer Tools](#developer-tools)
-  - [Subtitle Generation](#subtitle-generation)
-  - [WhatsApp Voice Processing](#whatsapp-voice-processing)
-  - [API Services](#api-services)
-- [Models](#models)
-  - [Open AI Whisper](#open-ai-whisper)
-- [Voice Assistants](#voice-assistants)
-  - [General](#general)
-  - [More Specific](#more-specific)
-  - [Voice Operating Systems](#voice-operating-systems)
-  - [Service-Specific Voice Tools](#service-specific-voice-tools)
-  - [Voice Biometrics](#voice-biometrics)
-  - [Complementary Tools](#complementary-tools)
-    - [Voice Activity Detection (VAD) \& Diarisation](#voice-activity-detection-vad--diarisation)
-  - [Toolkits \& Frameworks](#toolkits--frameworks)
-  - [Community Resources](#community-resources)
-    - [Subreddits](#subreddits)
-  - [Important Notes](#important-notes)
-    - [GPU Acceleration](#gpu-acceleration)
-    - [Wayland Compatibility](#wayland-compatibility)
-
-### 🤖 Voice Assistants
-- [Voice Assistants](#voice-assistants)
-  - [General](#general)
-  - [More Specific](#more-specific)
-  - [Voice Operating Systems](#voice-operating-systems)
-  - [Service-Specific Voice Tools](#service-specific-voice-tools)
-  - [Voice Biometrics](#voice-biometrics)
-- [Complementary Tools](#complementary-tools)
-  - [Voice Activity Detection (VAD) & Diarisation](#voice-activity-detection-vad--diarisation)
-- [Important Notes](#important-notes)
-  - [GPU Acceleration](#gpu-acceleration)
-  - [Wayland Compatibility](#wayland-compatibility)
-
----
+Me: raw notes, resource location, categorisation. 
+Claude: updating readme, polishing language. 
 
 ## Inclusion Criteria
 
@@ -168,21 +100,51 @@ This repository focuses on modern ASR projects from the current AI-accelerated e
 
 ---
 
-## Search Terms
+## Foundations Of Transription: Models + Wrappers
 
-STT and voice tech is fast evolving. These search terms were used to assist in compiling this list:
+The foundations of speech to text (in the modern era) are ASR models. 
 
-- STT
-- Linux ASR  
-- Linux Whisper apps
+Typically these are chained with other smaller models to:
 
-This index is (highly!) non-exhaustive. 
+- Add puncutation 
+- Add voice activity detection (some tools) 
+- Add speaker identification/diarisation (some tools) 
+
+ASR is inherently a-lingual. However, models are fine-trained on datasets of language-specific models. Major world languages are widely available while others are works in progress.
+
+Because Whisper is open source, you'll encounter more than one type of Whisper: 
+
+- Whisper variants (Faster Whisper, Crisper Whisper, etc) 
+- The original Whisper (as maintained by OpenAI) 
+- Various wrappers that intend to bridge between local inference and other languages 
+
+Some of what you'll find on a Github Whisper crawl is ready-to-use tooling (e.g. GUIs/CLIs that do the bundling). 
+
+In other cases, it's components that you assemble yourself: model + component + frontend (or CLI) = useable solution. 
+
+Hotkey support is also very common: I use a simple $5 USB button from Aliexpress (one of my greatest Ali buys!). But you can use a keyboard shortcut. Either way, after a few minutes of voice typing, the need is quickly apparent.
+
+A few other notes:
+
+### GPU Acceleration
+
+For STT/voice typing, you'll find that GPU acceleration is often limited to NVIDIA/CUDA. Having an NVIDIA GPU makes life easier when running local models!
+
+### Wayland Compatibility
+
+Wayland presents challenges with virtual keyboards.
+
+[ydotool](https://github.com/ReimuNotMoe/ydotool) (and its daemon) are commonly used to attempt to provide virtual keyboard suport while other implementations implement at the kernel level.
+
+### GUI or CLI
+
+As always in Linux, you'll notice a bias towards CLIs and (more AI/ML than Linux) a heavy bias towards Python. But there are projects that take a ... human friendlier approach ... and try to make voice tech accessible. I will always go out of my way to highlight those as they align closely with my own philosophy!
 
 ---
 
-## Speech-to-Text - Real Time
+# Projects 
 
-### GUIs
+## GUIs
 
 | Repository | Stars | Last Updated | Description |
 |------------|-------|--------------|-------------|
@@ -227,9 +189,8 @@ This index is (highly!) non-exhaustive.
 | [**dictator**](https://github.com/chris17453/dictator) | ![Stars](https://img.shields.io/github/stars/chris17453/dictator?style=flat-square) | ![Last Commit](https://img.shields.io/github/last-commit/chris17453/dictator?style=flat-square) | Voice dictation tool for Linux |
 | [**ptt-dictate**](https://github.com/arturo-jc/ptt-dictate) | ![Stars](https://img.shields.io/github/stars/arturo-jc/ptt-dictate?style=flat-square) | ![Last Commit](https://img.shields.io/github/last-commit/arturo-jc/ptt-dictate?style=flat-square) | Push-to-talk dictation tool |
 
-### Unsorted / Unreviewed
+### Unsorte
 
-Met inclusion criteria but haven't been tested yet. This represents a long tail of (mostly) Whisper-centric CLIs for real time STT.
 
 | Repository | Stars | Last Updated | Description |
 |------------|-------|--------------|-------------|
@@ -473,14 +434,4 @@ Relevant Reddit communities for STT, voice technology, and related topics:
 
 ---
 
-## Important Notes
-
-### GPU Acceleration
-
-For STT/voice typing, you'll find that GPU acceleration is often limited to NVIDIA/CUDA. Having an NVIDIA GPU makes life easier when running local models!
-
-### Wayland Compatibility
-
-Wayland presents challenges with virtual keyboards.
-
-[ydotool](https://github.com/ReimuNotMoe/ydotool) (and its daemon) are commonly used to attempt to provide virtual keyboard suport while other implementations implement at the kernel level.
+ 
