@@ -126,7 +126,11 @@ Check out [Getting Started Guide](starting-points.md) for step-by-step setup ins
 - [Voice Assistants](#voice-assistants)
   - [General](#general)
   - [More Specific](#more-specific)
+  - [Voice Operating Systems](#voice-operating-systems)
+  - [Service-Specific Voice Tools](#service-specific-voice-tools)
+  - [Voice Biometrics](#voice-biometrics)
 - [Complementary Tools](#complementary-tools)
+  - [Voice Activity Detection (VAD) & Diarisation](#voice-activity-detection-vad--diarisation)
 - [Important Notes](#important-notes)
   - [GPU Acceleration](#gpu-acceleration)
   - [Wayland Compatibility](#wayland-compatibility)
@@ -373,6 +377,30 @@ These projects leverage voice but for more specific capabilities than general di
 | [**Handy**](https://github.com/cjpais/Handy) | ![Stars](https://img.shields.io/github/stars/cjpais/Handy?style=flat-square) | ![Last Commit](https://img.shields.io/github/last-commit/cjpais/Handy?style=flat-square) | Voice-controlled computer interface - [handy.computer](https://handy.computer/) |
 | [**numen**](https://sr.ht/~geb/numen/) | N/A | N/A | Voice-controlled interface (hosted on SourceHut) |
 
+## Voice Operating Systems
+
+Full voice-enabled operating systems and distributions:
+
+| Repository | Stars | Last Updated | Description |
+|------------|-------|--------------|-------------|
+| [**ovos-buildroot**](https://github.com/OpenVoiceOS/ovos-buildroot) | ![Stars](https://img.shields.io/github/stars/OpenVoiceOS/ovos-buildroot?style=flat-square) | ![Last Commit](https://img.shields.io/github/last-commit/OpenVoiceOS/ovos-buildroot?style=flat-square) | OpenVoiceOS - A minimalistic Linux OS bringing the open source voice assistant to IoT and embedded devices |
+
+## Service-Specific Voice Tools
+
+Voice tools designed for specific platforms and services:
+
+| Repository | Stars | Last Updated | Description |
+|------------|-------|--------------|-------------|
+| [**overlayed**](https://github.com/overlayeddev/overlayed) | ![Stars](https://img.shields.io/github/stars/overlayeddev/overlayed?style=flat-square) | ![Last Commit](https://img.shields.io/github/last-commit/overlayeddev/overlayed?style=flat-square) | Voice overlay for Discord on Linux |
+
+## Voice Biometrics
+
+Tools for voice authentication and identification:
+
+| Repository | Stars | Last Updated | Description |
+|------------|-------|--------------|-------------|
+| [**voiceprint**](https://github.com/Raymo111/voiceprint) | ![Stars](https://img.shields.io/github/stars/Raymo111/voiceprint?style=flat-square) | ![Last Commit](https://img.shields.io/github/last-commit/Raymo111/voiceprint?style=flat-square) | Voice biometric authentication for Linux |
+
 ---
 
 ## Complementary Tools
@@ -383,6 +411,13 @@ These tools aren't STT/dictation tools themselves, but they help make the most o
 |------------|-------|--------------|-------------|
 | [**easyeffects**](https://github.com/wwmm/easyeffects) | ![Stars](https://img.shields.io/github/stars/wwmm/easyeffects?style=flat-square) | ![Last Commit](https://img.shields.io/github/last-commit/wwmm/easyeffects?style=flat-square) | Audio effects for PipeWire applications - noise reduction, equalization, and more |
 | [**NoiseTorch**](https://github.com/noisetorch/NoiseTorch) | ![Stars](https://img.shields.io/github/stars/noisetorch/NoiseTorch?style=flat-square) | ![Last Commit](https://img.shields.io/github/last-commit/noisetorch/NoiseTorch?style=flat-square) | Real-time microphone noise suppression on Linux |
+
+### Voice Activity Detection (VAD) & Diarisation
+
+These technologies complement voice systems by detecting when speech is happening (VAD) and identifying different speakers (diarisation):
+
+- **VAD (Voice Activity Detection)**: Algorithms that detect when speech is present in an audio stream, crucial for reducing processing overhead in real-time STT systems
+- **Diarisation**: The process of partitioning an audio stream into segments according to speaker identity. [Pyannote](https://github.com/pyannote/pyannote-audio) is a popular open-source toolkit for speaker diarisation
 
 ---
 
