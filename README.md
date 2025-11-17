@@ -2,18 +2,18 @@
 
 ![alt text](banner.png)
 
-## A snapshot of the evolving STT ecosystem for Linux (and more)
+## A snapshot of the evolving STT ecosystem for Linux 
 
 ![Last Updated](https://img.shields.io/badge/Last%20Updated-November%2017%2C%202025-blue?style=flat-square)
 ![Repository Type](https://img.shields.io/badge/Type-Index-green?style=flat-square)
 ![Resources](https://img.shields.io/badge/Resources-100%2B-orange?style=flat-square)
 ![License](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)
 
-Speech technology is booming!
+For a long time, voice support on Linux was very partial: the platform was mostly ignored by major dictation providers, owing to small desktop share, and voice assistant tools were hampered, in large part, by that fact - transcription being required for "assistants" which convert understood commands into shell commands/actions.
 
-This repository is an index of speech to text projects with support for the Linux desktop environment (among others).
+Since OpenAI open-sourced Whisper, there has been an explosion of tools. We now have a familiar Linux problem: lots of splintered projects!
 
-I hope that it will provide a useful collection of available projects (some fairly established, others at early stages of prototyping) useful for fellow STT enthusiasts and believers - whether you use Linux or not (many of the projects are cross-platform).
+I created this repo because - having been using voice for most typing for about a year now - I wanted to gather a list of projects to "check out" (over time). 
 
 ## Quick Navigation
 
@@ -30,14 +30,7 @@ I hope that it will provide a useful collection of available projects (some fair
 | ❌ Out of Scope | TTS | Text-to-speech synthesis tools |
 | ❌ Out of Scope | TTS Applications | Voice cloning and other TTS applications |
 
-## Project Classification
-
-All these are my subjective thoughts:
-
-Speech to text (STT) can be integrated into applications or at the OS level. For most applications, OS-level functionality is far more powerful, useful, and sustainable. You can use and pay for one good STT app that will work across software - whether it's available via web browser or a local application.
-
-OpenAI's decision to open-source Whisper has created a welcome flourishing of STT projects using Whisper - creating a sprawling long tail of tools in a corner of the voice technology world that was once lacking a diversity of tools.
-
+ 
 ### STT Deployment Patterns
 
 Projects typically support either **local STT** or **cloud STT**, and less commonly both:
@@ -92,28 +85,51 @@ Check out [Getting Started Guide](starting-points.md) for step-by-step setup ins
 - [Search Terms](#search-terms)
 
 ### 🎤 STT Tools & Related
-- [Speech-to-Text - Real Time](#speech-to-text---real-time)
-  - [GUIs](#guis)
-  - [CLIs](#clis)
-  - [Unsorted / Unreviewed](#unsorted--unreviewed)
-  - [STT with Post-processing](#stt-with-post-processing)
-  - [Proof of Concepts](#proof-of-concepts)
-  - [General STT Tools](#general-stt-tools)
-- [Self Hosted](#self-hosted)
-- [Vendor Projects](#vendor-projects)
-  - [Deepgram](#deepgram)
-  - [Small Repositories](#small-repositories)
-- [Speech-to-Text - Asynchronous](#speech-to-text---asynchronous)
-- [Developer Tools](#developer-tools)
-- [Subtitle Generation](#subtitle-generation)
-- [API Services](#api-services)
+- [Linux Speech-to-Text and Voice Assistants](#linux-speech-to-text-and-voice-assistants)
+  - [A snapshot of the evolving STT ecosystem for Linux](#a-snapshot-of-the-evolving-stt-ecosystem-for-linux)
+  - [Quick Navigation](#quick-navigation)
+  - [Inclusion Criteria](#inclusion-criteria)
+    - [STT Deployment Patterns](#stt-deployment-patterns)
+    - [Categorizing Whisper Implementations](#categorizing-whisper-implementations)
+  - [Largest Projects (1000+ Stars)](#largest-projects-1000-stars)
+  - [Getting Started](#getting-started)
+  - [Table of Contents](#table-of-contents)
+    - [General Sections](#general-sections)
+    - [🎤 STT Tools \& Related](#-stt-tools--related)
+    - [🤖 Voice Assistants](#-voice-assistants)
+  - [Inclusion Criteria](#inclusion-criteria-1)
+  - [Search Terms](#search-terms)
+  - [Speech-to-Text - Real Time](#speech-to-text---real-time)
+    - [GUIs](#guis)
+    - [CLIs](#clis)
+    - [Unsorted / Unreviewed](#unsorted--unreviewed)
+    - [STT with Post-processing](#stt-with-post-processing)
+    - [Proof of Concepts](#proof-of-concepts)
+    - [General STT Tools](#general-stt-tools)
+  - [Vendor Projects](#vendor-projects)
+    - [Deepgram](#deepgram)
+    - [Small Repositories](#small-repositories)
+  - [Self Hosted](#self-hosted)
+  - [Speech-to-Text - Asynchronous](#speech-to-text---asynchronous)
+  - [Developer Tools](#developer-tools)
+  - [Subtitle Generation](#subtitle-generation)
+  - [WhatsApp Voice Processing](#whatsapp-voice-processing)
+  - [API Services](#api-services)
 - [Models](#models)
   - [Open AI Whisper](#open-ai-whisper)
+- [Voice Assistants](#voice-assistants)
+  - [General](#general)
+  - [More Specific](#more-specific)
+  - [Notes On Wayland](#notes-on-wayland)
 
 ### 🤖 Voice Assistants
 - [Voice Assistants](#voice-assistants)
   - [General](#general)
   - [More Specific](#more-specific)
+- [Complementary Tools](#complementary-tools)
+- [Important Notes](#important-notes)
+  - [GPU Acceleration](#gpu-acceleration)
+  - [Wayland Compatibility](#wayland-compatibility)
 
 ---
 
@@ -246,6 +262,7 @@ Tools that leverage Whisper etc for STT but also add a layer for text cleanup af
 |------------|-------|--------------|-------------|
 | [**fortuna**](https://github.com/deepgram-devs/fortuna) | ![Stars](https://img.shields.io/github/stars/deepgram-devs/fortuna?style=flat-square) | ![Last Commit](https://img.shields.io/github/last-commit/deepgram-devs/fortuna?style=flat-square) | Deepgram Fortuna project |
 | [**voice-keyboard-linux**](https://github.com/deepgram/voice-keyboard-linux) | ![Stars](https://img.shields.io/github/stars/deepgram/voice-keyboard-linux?style=flat-square) | ![Last Commit](https://img.shields.io/github/last-commit/deepgram/voice-keyboard-linux?style=flat-square) | Deepgram voice keyboard |
+| [**Deepgram-Voice-Keyboard-Ubuntu**](https://github.com/danielrosehill/Deepgram-Voice-Keyboard-Ubuntu) | ![Stars](https://img.shields.io/github/stars/danielrosehill/Deepgram-Voice-Keyboard-Ubuntu?style=flat-square) | ![Last Commit](https://img.shields.io/github/last-commit/danielrosehill/Deepgram-Voice-Keyboard-Ubuntu?style=flat-square) | STT project using Deepgram API for Ubuntu |
 
 ### Small Repositories
 
@@ -345,21 +362,38 @@ To add:
 | [**Local-Voice**](https://github.com/shashank2122/Local-Voice) | ![Stars](https://img.shields.io/github/stars/shashank2122/Local-Voice?style=flat-square) | ![Last Commit](https://img.shields.io/github/last-commit/shashank2122/Local-Voice?style=flat-square) | Local voice assistant |
 
 
-## More Specific 
+## More Specific
+
+These projects leverage voice but for more specific capabilities than general dictation.
 
 | Repository | Stars | Last Updated | Description |
 |------------|-------|--------------|-------------|
 | [**home-assistant-assist-desktop**](https://github.com/timmo001/home-assistant-assist-desktop) | ![Stars](https://img.shields.io/github/stars/timmo001/home-assistant-assist-desktop?style=flat-square) | ![Last Commit](https://img.shields.io/github/last-commit/timmo001/home-assistant-assist-desktop?style=flat-square) | Home Assistant desktop client |
 | [**voice2json**](https://github.com/synesthesiam/voice2json) | ![Stars](https://img.shields.io/github/stars/synesthesiam/voice2json?style=flat-square) | ![Last Commit](https://img.shields.io/github/last-commit/synesthesiam/voice2json?style=flat-square) | Voice to JSON converter |
+| [**Handy**](https://github.com/cjpais/Handy) | ![Stars](https://img.shields.io/github/stars/cjpais/Handy?style=flat-square) | ![Last Commit](https://img.shields.io/github/last-commit/cjpais/Handy?style=flat-square) | Voice-controlled computer interface - [handy.computer](https://handy.computer/) |
+| [**numen**](https://sr.ht/~geb/numen/) | N/A | N/A | Voice-controlled interface (hosted on SourceHut) |
 
 ---
 
-## Contributing
+## Complementary Tools
 
-Missing a project? Found an error? We'd love to include it!
+These tools aren't STT/dictation tools themselves, but they help make the most out of voice typing and recording:
 
-**Ways to contribute:**
-- 📧 **Email**: [github@danielrosehill.com](mailto:github@danielrosehill.com)
-- 🔄 **Pull Request**: Submit a PR with your additions
+| Repository | Stars | Last Updated | Description |
+|------------|-------|--------------|-------------|
+| [**easyeffects**](https://github.com/wwmm/easyeffects) | ![Stars](https://img.shields.io/github/stars/wwmm/easyeffects?style=flat-square) | ![Last Commit](https://img.shields.io/github/last-commit/wwmm/easyeffects?style=flat-square) | Audio effects for PipeWire applications - noise reduction, equalization, and more |
+| [**NoiseTorch**](https://github.com/noisetorch/NoiseTorch) | ![Stars](https://img.shields.io/github/stars/noisetorch/NoiseTorch?style=flat-square) | ![Last Commit](https://img.shields.io/github/last-commit/noisetorch/NoiseTorch?style=flat-square) | Real-time microphone noise suppression on Linux |
 
-Please include the repository URL, a brief description, and confirm it meets our [inclusion criteria](inclusion-criteria.md).
+---
+
+## Important Notes
+
+### GPU Acceleration
+
+For STT/voice typing, you'll find that GPU acceleration is often limited to NVIDIA/CUDA. Having an NVIDIA GPU makes life easier when running local models!
+
+### Wayland Compatibility
+
+Wayland presents challenges with virtual keyboards.
+
+[ydotool](https://github.com/ReimuNotMoe/ydotool) (and its daemon) are commonly used to attempt to provide virtual keyboard suport while other implementations implement at the kernel level.
